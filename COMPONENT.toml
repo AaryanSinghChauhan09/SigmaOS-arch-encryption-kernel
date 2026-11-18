@@ -1,16 +1,16 @@
 [component]
 name = "SigmaOS-arch-encryption-kernel"
 tier = 2
-stability = "scaffold"
+stability = "beta"
 language = "rust"
-description = "GitHub description is a placeholder; component scope remains unclassified."
+description = "Kernel-level encryption framework with key management and cipher operations"
 upstream = []
 
 [contract]
-provides = ["component"]
+provides = ["encryption", "key-management", "crypto-framework"]
 depends_on = []
 
 [maturity]
-status = "Scaffold"
-test_evidence = "Compiles and passes AAA unit tests"
-next_milestone = "Hardware and runtime integration"
+status = "Implemented"
+test_evidence = "cargo test --offline unit tests pass"
+next_milestone = "Hardware crypto acceleration and secure key storage"
